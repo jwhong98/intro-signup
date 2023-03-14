@@ -1,0 +1,38 @@
+@import "./variables";
+@import "./mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  // height: 100%;
+  background-image: url("../images/bg-intro-mobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $red;
+  // @include centerFlexCol;
+}
+
+main {
+  @include centerFlexCol;
+  gap: 50px;
+  padding: 25px;
+}
+
+.intro {
+  color: #fff;
+  text-align: center;
+  &__title {
+    font-size: 1.75rem;
+    line-height: 1.25;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  // &__description {
+  // }
+}
