@@ -7,11 +7,25 @@
 }
 
 body {
+  height: 100vh;
   background-image: url("../images/bg-intro-mobile.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-color: #ff7a7a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main {
@@ -56,11 +70,83 @@ main {
   color: #b9b6d3;
   -webkit-box-shadow: 0 8px rgba(62, 60, 73, 0.3);
           box-shadow: 0 8px rgba(62, 60, 73, 0.3);
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .form-container__banner span {
   font-weight: 700;
   color: #fff;
+}
+
+.form-container__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-container__form input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #b9b6d3;
+}
+
+.form-container__form input::-webkit-input-placeholder {
+  font-weight: 600;
+}
+
+.form-container__form input:-ms-input-placeholder {
+  font-weight: 600;
+}
+
+.form-container__form input::-ms-input-placeholder {
+  font-weight: 600;
+}
+
+.form-container__form input::placeholder {
+  font-weight: 600;
+}
+
+.form-container__form button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background: #38cc8c;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0 5px rgba(62, 60, 73, 0.3);
+          box-shadow: 0 5px rgba(62, 60, 73, 0.3);
+}
+
+.form-container__form .terms {
+  text-align: center;
+  color: #b9b6d3;
+  font-size: 0.75rem;
+  padding: 0 15px;
+  font-weight: 500;
+}
+
+.form-container__form .terms .tos {
+  font-weight: 700;
+  color: #ff7a7a;
 }
 /*# sourceMappingURL=styles.css.map */
