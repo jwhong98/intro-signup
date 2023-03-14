@@ -42,21 +42,43 @@
           <span>Try it free 7 days</span> then $20/mo. thereafter
         </div>
         <form class="form-container__form" action="/">
-          <input id="fName" name="fName" type="text" placeholder="First Name" />
-          <input id="lName" name="lName" type="text" placeholder="Last Name" />
-          <input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="Email Address"
-          />
-          <input
-            id="password"
-            name="password"
-            type="password"
-            placeholder="Password"
-          />
-          <button type="submit">CLAIM YOUR FREE TRIAL</button>
+          <div class="form-container__form__row">
+            <input
+              id="fName"
+              name="fName"
+              type="text"
+              placeholder="First Name"
+            />
+            <span class="error"></span>
+          </div>
+          <div class="form-container__form__row">
+            <input
+              id="lName"
+              name="lName"
+              type="text"
+              placeholder="Last Name"
+            />
+            <span class="error"></span>
+          </div>
+          <div class="form-container__form__row">
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Email Address"
+            />
+            <span class="error"></span>
+          </div>
+          <div class="form-container__form__row">
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Password"
+            />
+            <span class="error"></span>
+          </div>
+          <button id="submitBtn" type="submit">CLAIM YOUR FREE TRIAL</button>
           <p class="terms">
             By clicking the button, you are agreeing to our
             <span class="tos">Terms and Services</span>
@@ -72,5 +94,6 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </p>
     </footer> -->
+    <script src="./script.js"></script>
   </body>
 </html>

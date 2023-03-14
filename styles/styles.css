@@ -151,6 +151,18 @@ main {
   }
 }
 
+.form-container__form__row {
+  width: 100%;
+}
+
+.form-container__form__row .error {
+  float: right;
+  font-size: 0.75rem;
+  color: #ff7a7a;
+  font-style: italic;
+  margin-top: 5px;
+}
+
 .form-container__form input {
   width: 100%;
   padding: 15px;
@@ -177,6 +189,11 @@ main {
   letter-spacing: 1px;
   -webkit-box-shadow: 0 5px #3ebd86;
           box-shadow: 0 5px #3ebd86;
+  cursor: pointer;
+}
+
+.form-container__form button:hover {
+  opacity: 0.7;
 }
 
 .form-container__form .terms {
@@ -191,5 +208,12 @@ main {
 .form-container__form .terms .tos {
   font-weight: 700;
   color: #ff7a7a;
+}
+
+input:invalid {
+  border: 2px solid #ff7a7a;
+  color: #ff7a7a;
+  background: url("../images/icon-error.svg") no-repeat;
+  background-position: right 20px center;
 }
 /*# sourceMappingURL=styles.css.map */
