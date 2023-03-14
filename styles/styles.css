@@ -10,7 +10,6 @@ body {
   height: 100vh;
   background-image: url("../images/bg-intro-mobile.png");
   background-position: center;
-  background-repeat: no-repeat;
   background-size: contain;
   background-color: #ff7a7a;
   display: -webkit-box;
@@ -26,6 +25,13 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    background-image: url("../images/bg-intro-desktop.png");
+    background-size: cover;
+  }
 }
 
 main {
@@ -44,6 +50,19 @@ main {
           justify-content: center;
   gap: 50px;
   padding: 25px;
+  max-width: 630px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 1100px;
+    gap: 30px;
+  }
 }
 
 .intro {
@@ -58,13 +77,39 @@ main {
   font-weight: 600;
 }
 
+@media only screen and (min-width: 1024px) {
+  .intro__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+}
+
 .intro__description {
   font-weight: 500;
 }
 
+@media only screen and (min-width: 1024px) {
+  .intro {
+    width: 50%;
+    text-align: left;
+  }
+}
+
+.form-container {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .form-container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
 .form-container__banner {
   background: #6055a5;
-  padding: 20px 50px;
+  padding: 15px 50px;
   text-align: center;
   border-radius: 10px;
   color: #b9b6d3;
@@ -96,6 +141,14 @@ main {
   gap: 15px;
   padding: 20px;
   border-radius: 10px;
+  -webkit-box-shadow: 0 8px rgba(62, 60, 73, 0.3);
+          box-shadow: 0 8px rgba(62, 60, 73, 0.3);
+}
+
+@media only screen and (min-width: 1024px) {
+  .form-container__form {
+    padding: 6%;
+  }
 }
 
 .form-container__form input {
@@ -104,27 +157,16 @@ main {
   border-radius: 8px;
   outline: none;
   border: 1px solid #b9b6d3;
-}
-
-.form-container__form input::-webkit-input-placeholder {
   font-weight: 600;
 }
 
-.form-container__form input:-ms-input-placeholder {
-  font-weight: 600;
-}
-
-.form-container__form input::-ms-input-placeholder {
-  font-weight: 600;
-}
-
-.form-container__form input::placeholder {
-  font-weight: 600;
+.form-container__form input:focus {
+  border-color: #6055a5;
 }
 
 .form-container__form button {
   width: 100%;
-  padding: 15px;
+  padding: 12px;
   border: none;
   outline: none;
   border-radius: 8px;
@@ -133,8 +175,8 @@ main {
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 1px;
-  -webkit-box-shadow: 0 5px rgba(62, 60, 73, 0.3);
-          box-shadow: 0 5px rgba(62, 60, 73, 0.3);
+  -webkit-box-shadow: 0 5px #3ebd86;
+          box-shadow: 0 5px #3ebd86;
 }
 
 .form-container__form .terms {
@@ -143,6 +185,7 @@ main {
   font-size: 0.75rem;
   padding: 0 15px;
   font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .form-container__form .terms .tos {
